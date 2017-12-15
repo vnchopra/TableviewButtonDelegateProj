@@ -13,10 +13,11 @@
 		9C3266DC1FCF67F40082469F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3266DB1FCF67F40082469F /* Assets.xcassets */; };
 		9C3266DF1FCF67F40082469F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3266DD1FCF67F40082469F /* LaunchScreen.storyboard */; };
 		9C3266E21FCF67F40082469F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3266E11FCF67F40082469F /* main.m */; };
+		9C3266EB1FCF6ECE0082469F /* TableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3266EA1FCF6ECE0082469F /* TableCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C3266CF1FCF67F40082469F /* TableviewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3266CF1FCF67F40082469F /* TableviewButtonDelegateProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewButtonDelegateProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3266D21FCF67F40082469F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C3266D31FCF67F40082469F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C3266D51FCF67F40082469F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,6 +27,8 @@
 		9C3266DE1FCF67F40082469F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3266E01FCF67F40082469F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3266E11FCF67F40082469F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C3266E91FCF6ECE0082469F /* TableCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellTableViewCell.h; sourceTree = "<group>"; };
+		9C3266EA1FCF6ECE0082469F /* TableCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,7 @@
 		9C3266D01FCF67F40082469F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C3266CF1FCF67F40082469F /* TableviewTest.app */,
+				9C3266CF1FCF67F40082469F /* TableviewButtonDelegateProj.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +61,7 @@
 		9C3266D11FCF67F40082469F /* TableviewTest */ = {
 			isa = PBXGroup;
 			children = (
+				9C3266E81FCF6DB90082469F /* Cell */,
 				9C3266D21FCF67F40082469F /* AppDelegate.h */,
 				9C3266D31FCF67F40082469F /* AppDelegate.m */,
 				9C3266D51FCF67F40082469F /* ViewController.h */,
@@ -71,12 +75,21 @@
 			path = TableviewTest;
 			sourceTree = "<group>";
 		};
+		9C3266E81FCF6DB90082469F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C3266E91FCF6ECE0082469F /* TableCellTableViewCell.h */,
+				9C3266EA1FCF6ECE0082469F /* TableCellTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C3266CE1FCF67F40082469F /* TableviewTest */ = {
+		9C3266CE1FCF67F40082469F /* TableviewButtonDelegateProj */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C3266E51FCF67F40082469F /* Build configuration list for PBXNativeTarget "TableviewTest" */;
+			buildConfigurationList = 9C3266E51FCF67F40082469F /* Build configuration list for PBXNativeTarget "TableviewButtonDelegateProj" */;
 			buildPhases = (
 				9C3266CB1FCF67F40082469F /* Sources */,
 				9C3266CC1FCF67F40082469F /* Frameworks */,
@@ -86,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = TableviewTest;
+			name = TableviewButtonDelegateProj;
 			productName = TableviewTest;
-			productReference = 9C3266CF1FCF67F40082469F /* TableviewTest.app */;
+			productReference = 9C3266CF1FCF67F40082469F /* TableviewButtonDelegateProj.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,11 +115,11 @@
 				TargetAttributes = {
 					9C3266CE1FCF67F40082469F = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 9C3266CA1FCF67F40082469F /* Build configuration list for PBXProject "TableviewTest" */;
+			buildConfigurationList = 9C3266CA1FCF67F40082469F /* Build configuration list for PBXProject "TableviewButtonDelegateProj" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C3266CE1FCF67F40082469F /* TableviewTest */,
+				9C3266CE1FCF67F40082469F /* TableviewButtonDelegateProj */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +157,7 @@
 			files = (
 				9C3266D71FCF67F40082469F /* ViewController.m in Sources */,
 				9C3266E21FCF67F40082469F /* main.m in Sources */,
+				9C3266EB1FCF6ECE0082469F /* TableCellTableViewCell.m in Sources */,
 				9C3266D41FCF67F40082469F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V9WP7C9YMV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableviewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vvcopp.TableviewTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vvcopp.TableviewButtonDelegateProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V9WP7C9YMV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableviewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vvcopp.TableviewTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vvcopp.TableviewButtonDelegateProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -305,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C3266CA1FCF67F40082469F /* Build configuration list for PBXProject "TableviewTest" */ = {
+		9C3266CA1FCF67F40082469F /* Build configuration list for PBXProject "TableviewButtonDelegateProj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C3266E31FCF67F40082469F /* Debug */,
@@ -314,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C3266E51FCF67F40082469F /* Build configuration list for PBXNativeTarget "TableviewTest" */ = {
+		9C3266E51FCF67F40082469F /* Build configuration list for PBXNativeTarget "TableviewButtonDelegateProj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C3266E61FCF67F40082469F /* Debug */,
